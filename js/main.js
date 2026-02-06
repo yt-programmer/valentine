@@ -29,11 +29,11 @@ const noBtnFun = () => {
 noBtn.addEventListener("mouseover", noBtnFun);
 noBtn.addEventListener("touchstart", noBtnFun);
 
-noBtn.addEventListener("click", () => {
-  noBtn.style.display = "none";
-  alert.innerHTML =
-    "<div class='no-valentine' ><p>enter on the screen to exit from here </p> <h1>stop messing with me</h1> <img src='images/gun.avif' alt='heart' /></div>";
-});
+// noBtn.addEventListener("click", () => {
+//   noBtn.style.display = "none";
+//   alert.innerHTML =
+//     "<div class='no-valentine' ><p>enter on the screen to exit from here </p> <h1>stop messing with me</h1> <img src='images/gun.avif' alt='heart' /></div>";
+// });
 
 yesBtn.addEventListener("click", () => {
   alert.innerHTML =
