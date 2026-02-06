@@ -24,6 +24,6 @@ noBtn.addEventListener("click", () => {
 
 yesBtn.addEventListener("click", () => {
   alert.innerHTML =
-    "<div class='valentine'><h1>you are my valentine, i love you</h1><img src='images/love.png' alt='heart' /> </div>";
+    "<div class='valentine'><h1>you are my valentine, i love you</h1><img src='images/Love.png' alt='heart' /> </div>";
   container.style.display = "none";
 });
