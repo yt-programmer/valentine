@@ -5,7 +5,8 @@ const container = document.querySelector(".container");
 const noValentine = document.querySelector(".no-valentine");
 
 let count = 0;
-noBtn.addEventListener("mouseover", () => {
+
+const noBtnFun = () => {
   count++;
   if (count > 5) {
     noBtn.style.display = "none";
@@ -24,7 +25,9 @@ noBtn.addEventListener("mouseover", () => {
       ? Math.floor(Math.random() * 100)
       : Math.floor(Math.random() * 250);
   noBtn.style.transform = `translate(${randomX}px, ${randomY}px)`;
-});
+};
+noBtn.addEventListener("mouseover", noBtnFun);
+noBtn.addEventListener("touchstart", noBtnFun);
 
 noBtn.addEventListener("click", () => {
   noBtn.style.display = "none";
