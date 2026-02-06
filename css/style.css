@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fea0ff;
+  overflow: hidden;
+  font-family: "Playwrite NZ Basic", cursive;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  text-align: center;
+  color: #ff009e;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  padding: 10px 40px;
+  font-size: 20px;
+  border-radius: 20px;
+  background-color: #ff009e;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.yes {
+  background-color: green;
+  transition: all 0.5s ease-in-out;
+}
+
+.yes:hover {
+  transform: scale(1.1);
+}
+
+.no {
+  transition: all 0.5s ease-in-out;
+  background-color: red;
+}
+
+.valentine img {
+  width: 200px;
+  height: 200px;
+}
+.valentine {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.valentine h1 {
+  color: #ff009e;
+}
+
+.no-valentine img {
+  width: 200px;
+  height: 200px;
+}
+.no-valentine {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
