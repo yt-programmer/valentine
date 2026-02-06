@@ -12,6 +12,8 @@ const noBtnFun = () => {
     noBtn.style.display = "none";
     alert.innerHTML =
       "<div class='no-valentine' ><h1>stop messing with me</h1> <img src='images/gun.avif' alt='heart' /></div>";
+
+    return;
   }
 
   let randomX;
