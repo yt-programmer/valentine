@@ -41,13 +41,15 @@ noBtn.addEventListener("mouseover", noBtnFun);
 noBtn.addEventListener("touchstart", noBtnFun);
 
 noBtn.addEventListener("click", () => {
-  noBtn.style.display = "none";
-  alert.innerHTML = `<div class='no-valentine' > <button class='btn exit'>Exit </button> <h1>stop messing with me</h1> <img src='images/gun.avif' alt='heart' /></div>`;
+  if (innerWidth > 720) {
+    noBtn.style.display = "none";
+    alert.innerHTML = `<div class='no-valentine' > <button class='btn exit'>Exit </button> <h1>stop messing with me</h1> <img src='images/gun.avif' alt='heart' /></div>`;
 
-  const exitBtn = alert.querySelector(".exit");
-  exitBtn.addEventListener("click", () => {
-    alert.innerHTML = "";
-  });
+    const exitBtn = alert.querySelector(".exit");
+    exitBtn.addEventListener("click", () => {
+      alert.innerHTML = "";
+    });
+  }
 });
 
 yesBtn.addEventListener("click", () => {
