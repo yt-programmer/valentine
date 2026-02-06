@@ -10,17 +10,26 @@ noBtn.addEventListener("mouseover", () => {
   if (count > 5) {
     noBtn.style.display = "none";
     alert.innerHTML =
-      "<div class='no-valentine' ><p>enter on the screen to exit window</p><h1>stop messing with me</h1> <img src='images/gun.avif' alt='heart' /></div>";
+      "<div class='no-valentine' ><h1>stop messing with me</h1> <img src='images/gun.avif' alt='heart' /></div>";
   }
-  const randomX = Math.floor(Math.random() * 300);
-  const randomY = Math.floor(Math.random() * 300);
+
+  let randomX;
+  let randomY;
+  randomX =
+    window.innerWidth <= 500
+      ? Math.floor(Math.random() * 100)
+      : Math.floor(Math.random() * 250);
+  randomY =
+    window.innerWidth <= 500
+      ? Math.floor(Math.random() * 100)
+      : Math.floor(Math.random() * 250);
   noBtn.style.transform = `translate(${randomX}px, ${randomY}px)`;
 });
 
 noBtn.addEventListener("click", () => {
   noBtn.style.display = "none";
   alert.innerHTML =
-    "<div class='no-valentine' ><p>enter on the screen to exit window</p> <h1>stop messing with me</h1> <img src='images/gun.avif' alt='heart' /></div>";
+    "<div class='no-valentine' ><p>enter on the screen to exit from here </p> <h1>stop messing with me</h1> <img src='images/gun.avif' alt='heart' /></div>";
 });
 
 yesBtn.addEventListener("click", () => {
