@@ -29,7 +29,7 @@ const noBtnFun = () => {
   noBtn.style.transform = `translate(${randomX}px, ${randomY}px)`;
 };
 noBtn.addEventListener("mouseover", noBtnFun);
-// noBtn.addEventListener("touchstart", noBtnFun);
+noBtn.addEventListener("touchstart", noBtnFun);
 
 // noBtn.addEventListener("click", () => {
 //   noBtn.style.display = "none";
