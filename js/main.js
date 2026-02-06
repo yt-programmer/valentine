@@ -43,8 +43,8 @@ yesBtn.addEventListener("click", () => {
   container.style.display = "none";
 });
 
-alert.addEventListener("click", (e) => {
-  if (e.target.closest(".no-valentine")) {
-    alert.innerHTML = "";
-  }
-});
+// alert.addEventListener("click", (e) => {
+//   if (e.target.closest(".no-valentine")) {
+//     alert.innerHTML = "";
+//   }
+// });
